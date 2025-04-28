@@ -1,0 +1,13 @@
+services:
+  jupyter:
+    image: jupyter/base-notebook:latest
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./my_volumes:/home/jovyan
+    environment:
+      - JUPYTER_TOKEN=mysecretpassword
+    restart: always
+
+# access by -> http://localhost:8888/?token=mysecretpassword
+# up command -> docker-compose -f jupyter_docker_compose.yaml up -d

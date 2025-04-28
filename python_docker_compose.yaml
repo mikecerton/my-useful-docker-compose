@@ -1,0 +1,7 @@
+services:
+  python-app:
+    image: python:latest
+    volumes:
+      - ./my_volumes:/my_volumes
+    working_dir: /my_volumes
+    # command: ["python", "your_script.py"]
