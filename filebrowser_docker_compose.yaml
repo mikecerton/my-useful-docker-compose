@@ -7,3 +7,7 @@ services:
     volumes:
       - .:/srv
     restart: unless-stopped
+
+# username : admin
+# password : admin
+# access by http://localhost:8080
