@@ -8,3 +8,11 @@ services:
       ACCEPT_EULA: "Y"
     ports:
       - "1433:1433"
+
+# Host:       localhost
+# Port:       1433
+# Database:   master (or your database)
+# Username:	  sa
+# Password: 	your_password1234
+
+# jdbc:sqlserver://localhost:1433;databaseName=your_database;user=sa;password=your_password1234;
